@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/editText"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true">
+
+        </EditText>
+
+        <SeekBar
+            android:id="@+id/seekBarSize"
+            android:thumbTint="#B3B9AF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/editText"
+            android:layout_marginBottom="-89dp">
+
+        </SeekBar>
+
+        <Button
+            android:id="@+id/ButtonText"
+            android:text="@string/ChangeText"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@id/seekBarSize"
+            android:layout_centerHorizontal="true">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment2"
+        android:layout_width="match_parent"
+        android:layout_height="331dp">
+
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:text="Fragment two"
+            android:textAlignment="center"></TextView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <SeekBar
+            android:id="@+id/seekBarRed"
+            android:thumbTint="#F71D12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </SeekBar>
+
+        <SeekBar
+            android:id="@+id/seekBarGreen"
+            android:thumbTint="#58FA24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </SeekBar>
+
+        <SeekBar
+            android:id="@+id/seekBarBlue"
+            android:thumbTint="#32BAFE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </SeekBar>
+
+        <Button
+            android:id="@+id/ButtonColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ChangeColor">
+        </Button>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
